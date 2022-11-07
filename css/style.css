@@ -4,9 +4,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*GENERAL*/
+body {
+    color: white;
+    font-family: sans-serif ;
+}
+
+/*---------------------------------------------------------------------------------*/
 
 /*HEADER*/
 header {
-    background-color: black;
+   background-color: black;
     height: 80px;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+}
+.spanHeader {
+    background-color: rgb(92, 92, 92);
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+/*MAIN*/
+main {
+    height: calc(100vh - 160px);
+    background-color: red;
+}
+
+
+/*---------------------------------------------------------------------------------*/
+
+/*FOOTER*/
+footer {
+    height: 80px;
+    background-color: #222222 ;
 }
