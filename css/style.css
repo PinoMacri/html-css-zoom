@@ -56,8 +56,8 @@ main {
     width: 220px;
 }
 div img {
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 main span {
     background-color: rgba(0, 0, 0, 0.5 );
@@ -76,6 +76,56 @@ footer {
     position: sticky;
     bottom: 0;
     width: 100%;
+    font-size: 30px;
 }
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.colDX {
+    color: red;
+    background-color: #4A4A4A;
+    padding: 10px;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
 
+}
+.colCentral ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.colCentral ul li {
+display: inline-block;
+font-size: 15px;
+margin: 0px 15px;
+text-align: center;
+}
+footer li span {
+    font-size: 30px;
+}
+.shareGreen {
+    color: rgb(0, 184, 0);
+}
+.colSX ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.colSX ul li {
+    margin: 0px 15px;
+}
+.colSX ul li {
+    font-size: 15px;
+    margin: 0px 15px;
+    text-align: center;
+    }
+.arrowsSpan {
+        font-size: 15px;
+       
+    }
 
