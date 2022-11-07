@@ -9,7 +9,13 @@ body {
     color: white;
     font-family: sans-serif ;
 }
-
+div {
+    border: 2px dashed black;
+}
+/*UTILITIES*/
+.flex {
+    display: flex;
+}
 /*---------------------------------------------------------------------------------*/
 
 /*HEADER*/
@@ -35,8 +41,27 @@ header {
 
 /*MAIN*/
 main {
-    height: calc(100vh - 160px);
     background-color: red;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 1600px;
+    margin: 0 auto;
+    height: 1500px;
+    flex-direction: column;
+    gap: 10px;
+}
+.row {
+    width: 100%;
+    height: calc(100% / 5);
+    gap: 10px;
+   
+}
+.col {
+width: calc(100% / 7);
 }
 
 
@@ -46,4 +71,9 @@ main {
 footer {
     height: 80px;
     background-color: #222222 ;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
 }
+
+
