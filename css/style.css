@@ -9,13 +9,11 @@ body {
     color: white;
     font-family: sans-serif ;
 }
-div {
-    border: 2px dashed black;
-}
 /*UTILITIES*/
 .flex {
     display: flex;
 }
+
 /*---------------------------------------------------------------------------------*/
 
 /*HEADER*/
@@ -28,6 +26,7 @@ header {
     justify-content: flex-end;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .spanHeader {
     background-color: rgb(92, 92, 92);
@@ -41,29 +40,32 @@ header {
 
 /*MAIN*/
 main {
-    background-color: red;
-    width: 100%;
+    background-color: black;
     padding: 20px;
-    justify-content: center;
-    align-items: center;
 }
 .container {
-    width: 1600px;
+    max-width: 1700px;
     margin: 0 auto;
-    height: 1500px;
-    flex-direction: column;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
 }
-.row {
-    width: 100%;
-    height: calc(100% / 5);
-    gap: 10px;
-   
+.container div {
+    position: relative;
+    height: 150px;
+    width: 220px;
 }
-.col {
-width: calc(100% / 7);
+div img {
+width: 100%;
+height: 100%;
 }
-
+main span {
+    background-color: rgba(0, 0, 0, 0.5 );
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+}
 
 /*---------------------------------------------------------------------------------*/
 
